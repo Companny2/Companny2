@@ -1,0 +1,227 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Contenedor principal */
+.container {
+    text-align: center;
+}
+
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, rgba(2, 2, 65, 0.7), rgba(2, 27, 126, 0.671)); /* Azul marino */
+    transition: background 0.2s ease;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.footer-logo img {
+    width: 100px; /* Ajusta el tamaño según tu logo */
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-info, .footer-contact {
+    text-align: left;
+}
+
+.footer-info h3, .footer-contact h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-info ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+}
+
+.footer-bottom span {
+    font-weight: bold;
+    color: #FFD700; /* Puedes cambiar el color */
+}
+
+
+/* Estilo del encabezado */
+header {
+    background-color: rgb(0, 77, 26);
+    color: rgb(0, 77, 26);
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilos de la barra de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: rgb(243, 252, 251);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Estilos de las secciones */
+section {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem 0;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    opacity: 1;  /* Cambiar a 1 para que las secciones no estén ocultas */
+    transform: translateY(0); /* Cambiar para que las secciones no se deslicen hacia abajo */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estilo del menú interactivo */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    opacity: 1;  /* Asegurarse de que los íconos sean visibles desde el principio */
+    transform: translateY(0); /* Asegurarse de que los íconos no estén desplazados */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.servicio-detalle {
+    display: none;
+    margin-top: 20px;
+}
+
+.servicio-detalle.show {
+    display: block;
+}
+
+.item img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para las imágenes */
+.item:hover img {
+    transform: scale(1.15) rotate(1deg);
+}
+
+.item span {
+    margin-top: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Animación de los íconos del menú */
+.item.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo del ícono de bocina portátil */
+.item-bocina img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.item-bocina:hover img {
+    transform: scale(1.15) rotate(1deg);
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.15) rotate(0.5deg);
+}
+
+/* Pie de página */
+footer {
+    background-color: rgb(0, 77, 26);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.registro {
+    font-size: 1rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
